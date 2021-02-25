@@ -1,13 +1,12 @@
 import React from 'react';
-import Navbar from "./Navbar";
-import Card from "./Card";
-import "bootstrap/dist/css/bootstrap.min.css";
-import "bootstrap/dist/js/bootstrap.bundle.min.js";
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Navigationbar from "./components/Navigationbar";
+import Card from "./components/Card";
 
 function App() {
   return (
     <div className="App">
-      <Navbar/>
+      <Navigationbar/>
       <Card/>
     </div>
   );
