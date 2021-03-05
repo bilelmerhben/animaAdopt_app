@@ -7,7 +7,7 @@ export default class Navigationbar extends Component {
   render() {
     return (
       <div>
-          <Navbar bg="dark" variant="dark" expand="lg">
+          <Navbar fixed="top" bg="dark" variant="dark" expand="lg">
   <Navbar.Brand href="/">AnimaAdopt</Navbar.Brand>
   <Navbar.Toggle aria-controls="basic-navbar-nav" />
   <Navbar.Collapse id="basic-navbar-nav">

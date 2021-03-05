@@ -1,13 +1,23 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { Switch ,Route } from "react-router-dom";
 import Navigationbar from "./components/Navigationbar";
 import Card from "./components/Card";
+import Inscrit from './components/Inscrit';
+
 
 function App() {
   return (
     <div className="App">
-      <Navigationbar/>
-      <Card/>
+     
+        <Navigationbar/>
+        <Switch>
+          {/*  <Route  exact path="/" component={Card} />*/}
+          <Route  exact path="/inscription" component={Inscrit} />
+        </Switch>
+        {/* <Route component={Default} />*/}
+     
+      
     </div>
   );
 }
