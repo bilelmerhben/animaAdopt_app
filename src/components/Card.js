@@ -1,15 +1,21 @@
 import React, { Component } from 'react';
 import  { Carousel} from 'react-bootstrap';
 export default class Card extends Component {
+  constructor(props) {
+    super(props);
+   {/* this.wrapper = React.createRef(); */} 
+  }
     render() {
         return (
             <div>
-            <Carousel>
-  <Carousel.Item>
+            <Carousel className="container" >
+  <Carousel.Item >
     <img
-      className="d-block w-100"
+      style={{height:500,width:1200}}
+      className="rounded mx-auto d-block"
       src="./cat.jpg"
       alt="First slide"
+      
     />
     <Carousel.Caption>
       <h3>First slide label</h3>
@@ -18,7 +24,8 @@ export default class Card extends Component {
   </Carousel.Item>
   <Carousel.Item>
     <img
-      className="d-block w-100"
+    style={{height:500,width:1200}}
+    className="rounded mx-auto d-block"
       src="./cat2.jpg"
       alt="Second slide"
     />
@@ -30,7 +37,8 @@ export default class Card extends Component {
   </Carousel.Item>
   <Carousel.Item>
     <img
-      className="d-block w-100"
+     style={{height:500,width:1200}}
+     className="rounded mx-auto d-block"
       src="./cat3.jpg"
       alt="Third slide"
     />
