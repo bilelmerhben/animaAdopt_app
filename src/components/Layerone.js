@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import  { Carousel} from 'react-bootstrap';
-export default class Card extends Component {
+import Navigationbar from './Navigationbar';
+export default class Layerone extends Component {
   constructor(props) {
     super(props);
    {/* this.wrapper = React.createRef(); */} 
@@ -8,7 +9,8 @@ export default class Card extends Component {
     render() {
         return (
             <div>
-            <Carousel className="container" >
+               <Navigationbar/>
+ <Carousel className="container" >
   <Carousel.Item >
     <img
       style={{height:500,width:1200}}
@@ -18,8 +20,8 @@ export default class Card extends Component {
       
     />
     <Carousel.Caption>
-      <h3>First slide label</h3>
-      <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+      {/* <h3>First slide label</h3>
+      <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p> */}
     </Carousel.Caption>
   </Carousel.Item>
   <Carousel.Item>
@@ -31,8 +33,8 @@ export default class Card extends Component {
     />
 
     <Carousel.Caption>
-      <h3>Second slide label</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+  {/*     <h3>Second slide label</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> */}
     </Carousel.Caption>
   </Carousel.Item>
   <Carousel.Item>
@@ -44,13 +46,13 @@ export default class Card extends Component {
     />
 
     <Carousel.Caption>
-      <h3>Third slide label</h3>
-      <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+     {/*  <h3>Third slide label</h3>
+      <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p> */}
     </Carousel.Caption>
   </Carousel.Item>
-</Carousel>
+</Carousel> 
 
-
+<h1>Home Page</h1>
 </div>  
         )
     }

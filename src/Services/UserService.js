@@ -1,5 +1,5 @@
-import axios from 'axios';
-const User_Rest_API_Url ="http://localhost:8686/setUser";
+/* import axios from 'axios';
+const User_Rest_API_Url ="http://localhost:8687/api/auth/signup";
 class UserService{
 
 createUser(user){
@@ -7,4 +7,4 @@ createUser(user){
 }
     
 }
-export default new UserService();
+export default new UserService(); */
