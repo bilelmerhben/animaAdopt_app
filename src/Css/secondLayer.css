@@ -1,0 +1,37 @@
+.a1 {
+  background-color: rgb(235, 189, 41);
+}
+.a2 {
+  background-color: rgb(76, 245, 217);
+}
+.a3 {
+  background-color: rgb(46, 236, 78);
+}
+.a1,
+.a2,
+.a3 {
+  display: inline-block;
+  border-radius: 0 5rem;
+  width: 200px;
+  height: 150px;
+  box-shadow: 3px 1px 11px rgb(95, 94, 94);
+}
+.a {
+  position: relative;
+  margin-bottom: 10px;
+  margin-top: -5em;
+  margin-right: 7em;
+  opacity: 0.9;
+}
+#txt {
+  position: absolute;
+  padding-top: 1.5em;
+  padding-left: 1em;
+  font-size: 1.5rem;
+  font-weight: bold;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+#symbole {
+  height: 2em;
+}

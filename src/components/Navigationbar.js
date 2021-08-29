@@ -55,11 +55,11 @@ export default class Navigationbar extends Component {
   render() {
     return (
       <div >
-          <Navbar   bg="dark" variant="dark" expand="lg">
-  <Navbar.Brand id="logo" href="/"><img src="./logo3.png" class="img-thumbnail img-fluid" alt="AnimaAdopt"></img></Navbar.Brand>
+          <Navbar fixed="top"   bg="dark" variant="dark" expand="lg">
+  <Navbar.Brand id="logo" href="/"><img style={{height:50}}src="./logo3.png" class="img-fluid" alt="AnimaAdopt"/></Navbar.Brand>
   <Nav className="mr-auto">
         <NavLink href="/">Home</NavLink>
-        {this.state.showUser && <NavLink href="/user">User</NavLink>}
+      {/*this.state.showUser && <NavLink href="/user">User</NavLink> */}
         {this.state.showPM && <NavLink href="/pm">PM</NavLink>}
         {this.state.showAdmin && <NavLink href="/admin">Admin</NavLink>}
       </Nav>
@@ -89,21 +89,26 @@ export default class Navigationbar extends Component {
           )
         }
       </Navbar.Collapse>
+      <NavItem>
+                <NavLink href="/info">Info</NavLink>
+              </NavItem>
   <Navbar.Collapse id="basic-navbar-nav" >
     <Nav className="mr-auto"> 
-      <NavDropdown title="Nos Associations" className="association">
-        <NavDropdown.Item href="/SOS">SOS animaux</NavDropdown.Item>
-        <NavDropdown.Item href="/association">Association</NavDropdown.Item>
-      </NavDropdown>
-      <NavDropdown title="Nos Services" className="services">
+     
+    {this.state.showUser && 
+        <NavItem title="Association" className="association" >
+        <NavLink href="/association">Association</NavLink>
+        </NavItem>}
+        {this.state.showUser && 
+      <NavDropdown title="Services" className="services">
         <NavDropdown.Item href="/adopt">Adopter un animal</NavDropdown.Item>
-        <NavDropdown.Item href="/abandon">Céder votre animal</NavDropdown.Item>
+        {/* <NavDropdown.Item href="/abandon">Céder votre animal</NavDropdown.Item> */}
         <NavDropdown.Item href="/save">Enregistrer votre animal</NavDropdown.Item>
-      </NavDropdown>
-      <NavDropdown title="English"className="multilinge">
+      </NavDropdown>}
+     {/*  <NavDropdown title="English"className="multilinge">
       <NavDropdown.Item href="/">English</NavDropdown.Item>
       <NavDropdown.Item href="/">Français</NavDropdown.Item>
-      </NavDropdown>
+      </NavDropdown> */}
       
 
     </Nav>

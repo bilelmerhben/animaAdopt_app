@@ -1,0 +1,44 @@
+.footer {
+  background-image: url("https://blueprint10.s3.amazonaws.com/Aii7AfBiqWo%3D/CjSrEfhg5WrZ4ka8Jyc55A%3D%3D/CDy2BvBgoiXPo024/Vm3pWw%3D%3D/NDisQthqqnXLq0Wz/slide-feb-2019.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-size: cover;
+  border: solid black 1px;
+  margin-top: 20px;
+  height: 500px;
+}
+.contact {
+  margin-top: 50px;
+  margin-left: 100px;
+  width: 500px;
+  float: left;
+}
+#logo {
+  color: rgb(241, 245, 243);
+  font-weight: bold;
+  font-style: italic;
+  font-family: "Courier New", Courier, monospace;
+}
+#site {
+  color: rgb(48, 70, 7);
+}
+#logo2 {
+  color: rgb(241, 245, 243);
+  font-weight: bold;
+  font-style: italic;
+  font-family: "Courier New", Courier, monospace;
+}
+#sublog1 {
+  color: rgb(6, 14, 24);
+}
+#sublog2 {
+  color: rgb(19, 22, 11);
+}
+#sublog {
+  color: rgb(37, 9, 9);
+}
+.footer2 {
+  margin-top: 10px;
+  margin-right: 500px;
+  float: right;
+}

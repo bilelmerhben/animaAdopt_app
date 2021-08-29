@@ -32,7 +32,7 @@ class Login extends Component {
                   this.state.password)
       .then(
         () => {
-          this.props.history.push('/profile');
+          this.props.history.push('/');
         },
         error => {
           console.log("Login fail: error = { " + error.toString() + " }");
@@ -45,14 +45,14 @@ class Login extends Component {
     return ( 
       <div >
               <Navigationbar/>
-        <Container fluid >
+        <Container  style={{marginTop:200,width:700}} fluid >
           <Row style={{marginTop:"20px"}} className="container">
-          <Col sm="12" md={{ size: 3, offset: 4 }}>
+          <Col  style={{paddingBottom:10,paddingTop:10}} sm="12" md={{ size: 3, offset: 4 }}>
            {/*  <div style={{marginBottom: "10px"}}>
               <img src="" alt="Avatar" className="avatar center" 
                 style={{width: "50%", height: "auto"}}/>
             </div> */}
-            <Form  onSubmit={this.doLogin}>
+            <Form className="container" onSubmit={this.doLogin}>
               <FormGroup>
                 <Form.Label for="username"><strong>Username</strong></Form.Label>
                 <Form.Control autoFocus 

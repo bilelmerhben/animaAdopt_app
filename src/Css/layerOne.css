@@ -1,0 +1,7 @@
+.layerone {
+  background-image: url("https://i.pinimg.com/736x/cc/fc/0a/ccfc0ad3c97501ebc1fe24609bf19867.jpg");
+  /* background-repeat: no-repeat;
+   background-size: contain;
+  */
+  background-size: cover;
+}

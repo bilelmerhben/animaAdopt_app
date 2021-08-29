@@ -77,6 +77,7 @@ class SignUp extends Component {
 
   signUp = (e) => {
     e.preventDefault();
+ 
     const valid = validateForm(this.state.errors);
     this.setState({validForm: valid});
     if(valid){
@@ -91,7 +92,8 @@ class SignUp extends Component {
             message: response.data.message,
             successful: true
           });
-        },
+          this.props.history.push('/');
+         },
         error => {
           console.log("Fail! Error = " + error.toString());
           
@@ -100,7 +102,8 @@ class SignUp extends Component {
             message: error.toString()
           });
         }
-      );  
+      );
+
     }
   }
 
@@ -124,14 +127,15 @@ class SignUp extends Component {
                   </Alert>
                 );
       }
+      //this.props.history.push('/');
     }
 
     return ( 
-      <div>
+      <div >
        <Navigationbar/>
-        <Container fluid>
+        <Container  style={{marginTop:200,width:700}} fluid>
           <Row className="container">
-          <Col sm="12" md={{ size: 4, offset: 4 }}>
+          <Col  style={{paddingBottom:10,paddingTop:10}}sm="12" md={{ size: 4, offset: 4 }}>
           {title}
             <Form onSubmit={this.signUp}>
               <Form.Group controlId="name">
@@ -212,13 +216,13 @@ class SignUp extends Component {
                 }
               </Form.Group>
 
-              <Button variant="primary" type="submit" onClick={()=>{console.log
+              <Button variant="primary" type="submit" onClick={this.signUp}/*  onClick={()=>{console.log
               (
         this.state.name,
         this.state.username,
         this.state.email,
         this.state.password
-        )}}>
+        )}} */>
                 Create
               </Button>
               {

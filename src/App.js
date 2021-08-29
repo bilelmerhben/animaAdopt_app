@@ -12,7 +12,10 @@ import ProjectManagerPage from './components/ProjectManagerPage';
 import AdminPage from './components/AdminPage';
 import Adopter from './components/Adopter';
 import Logout from './components/Logout';
-
+import Animal from './components/Animal';
+import Abondon from './components/Abondon';
+import Association from './components/Association';
+import Infomation from './components/info';
 function App() {
   return (
     <div className="App">
@@ -29,9 +32,16 @@ function App() {
             <Route   path="/signin" exact={true} component={Login} />
             <Route   path="/admin" exact={true} component={Admin} />
             <Route   path="/logout" exact={true} component={Logout} />
+            <Route   path="/logout" exact={true} component={Logout} />
+            <Route   path="/association" exact={true} component={Association} />
+            <Route   path="/abandon" exact={true} component={Abondon} />
+            <Route   path="/save" exact={true} component={Animal} />
+            <Route   path="/info" exact={true} component={Infomation} />
             <Route   path="/adopt" exact={true} component={Adopter} />
-       
+           
         </Switch>
+        
+       
         {/* <Route component={Default} />*/}
        {/* {<SecondLayer />} */}
     </div>

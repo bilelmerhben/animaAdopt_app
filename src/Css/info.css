@@ -1,0 +1,31 @@
+.info {
+  background-image: url("https://lh3.googleusercontent.com/proxy/eranp52KNOR3aGVGMPv7iOpvg1Qtl2M5V9DV7oSouNZyXgD4xCOINTyqMqZDKj0lVE4RyO_VCN1RzRjtsyrl6sRg0bfp-PqID-sTVOALnPw1eSZrCKV-GYMu7i5xxECqHJR1FIGvRIV8Mg9Mn9jguCCeJTOJc1beyTrMKU8o_YNuKVdo");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-size: cover;
+  border: solid black 1px;
+  margin-top: 20px;
+  opacity: 0.8;
+  height: 450px;
+}
+#inofUl {
+  position: relative;
+  margin: 141px;
+  color: rgb(13, 14, 13);
+  font-size: 1.3em;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-weight: lighter;
+}
+#welcome {
+  float: right;
+  color: rgb(21, 9, 78);
+  margin-right: 100px;
+  margin-top: 70px;
+  font-family: "Times New Roman", Times, serif;
+}
+#visite {
+  color: rgba(75, 77, 3, 0.856);
+  margin-top: 51px;
+  font-family: cursive;
+  font-weight: bold;
+}
